@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatting</title>
     <style>
-        body{
+        body {
             background-color: #f4f4f9;
-            font-family:Arial;
+            font-family: Arial;
             line-height: 1.7;
             margin: 0;
             padding: 0;
         }
-        .container{
-            width:80%;
+
+        .container {
+            width: 80%;
             margin: 0 auto;
         }
+
         .card {
             background-color: #fff;
             padding: 20px;
@@ -23,58 +26,67 @@
             margin-bottom: 10px 30px;
             max-width: 900px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0,0.8);
-            border-top: 4px solid  #00ff33;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.8);
+            border-top: 4px solid #00ff33;
         }
+
         .card.module-1 {
-            border-top-color:#99ff00;
+            border-top-color: #99ff00;
         }
+
         .card.module-2 {
-            border-top-color:#00ff88;
+            border-top-color: #00ff88;
         }
-        header{
+
+        header {
             text-align: center;
-            color:#555;
+            color: #555;
             margin-bottom: 30px;
         }
-        h1{
+
+        h1 {
             text-align: center;
             color: #00ff91;
         }
 
         a {
-            display: inline-block; /* สำคัญ: เพื่อให้ตัวแปร padding และ margin ทำงานได้แม่นยำขึ้น */
+            display: inline-block;
+            /* สำคัญ: เพื่อให้ตัวแปร padding และ margin ทำงานได้แม่นยำขึ้น */
             text-decoration: none;
             color: #ffffff;
             background-color: #6fff00;
             padding: 8px 12px;
             border-radius: 6px;
         }
+
         a:hover {
             text-decoration: underline;
             color: rgb(255, 255, 255);
             background-color: rgb(6, 91, 0);
         }
-        footer{
+
+        footer {
             margin-bottom: 20px;
             text-align: center;
         }
-        .text-color{
+
+        .text-color {
             color: #00cb4e;
         }
-        .box{
-            border:2px solid #000 ;
+
+        .box {
+            border: 2px solid #000;
             padding: 12px 20px;
             x-width: fit-content;
         }
-        
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Workshop: HTML Text Formatting</h1>
-        <p>ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+            <p>ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
         </header>
         <!-- Card 1: Explanation -->
         <section class="card">
@@ -83,58 +95,79 @@
             <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น</p>
 
             <ul>
-                    <li>&lt;b&gt; - <b class="text-color">ตัวหนา (เน้นเฉย ๆ)</b></li>
-                    <li>&lt;strong&gt; - <strong class="text-color">ตัวหนาแบบ "สำคัญ" เชิงความหมาย (semantic importance)</strong></li>
-                    <li>&lt;i&gt; - <i class="text-color">ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</i></li>
-                    <li>&lt;em&gt; - <em class="text-color">ตัวเอียงแบบเน้นน้ำเสียง</em></li>
-                    <li>&lt;u&gt; - <u class="text-color">ขีดเส้นใต้</u></li>
-                    <li>&lt;ins&gt; - <ins class="text-color">ขีดเส้นใต้</ins></li>
-                    <li>&lt;mark&gt; - <mark class="text-color">ไฮไลต์ข้อความ</mark></li>
-                    <li>&lt;code&gt; - <code class="text-color">แสดงข้อความเป็นรูปแบบโค้ด</code></li>
-                    <li>&lt;small&gt; - <small class="text-color">ข้อความขนาดเล็ก</small></li>
-                    <li>&lt;del&gt; - <del class="text-color">ข้อความขีดฆ่า</del></li>
-                    <li>&lt;s&gt; - <s class="text-color">ข้อความขีดฆ่า</s></li>
-                    <li>&lt;sub&gt; - ตัวห้อย เช่น H<sub class="text-color">2</sub>O</li>
-                    <li>&lt;sup&gt; - ตัวยก เช่น x<sup class="text-color">2</sup></li>
-                </ul>
-                <div class="box">
-                    <p>แท็กที่ไม่รองรับใน HTML5</p>
-                    <ul>
-                        <li>&lt;strike&gt; – <s class="text-color">not support in HTML5</s></li>
-                        <li>&lt;big&gt; – <span class="text-color" style="font-size: 1.5em;">not support in HTML5</span>
-                        </li>
-                        <li>&lt;tt&gt; – <code class="text-color">not support in HTML5</code></li>
-                    </ul>
-                </div
-
-            <div class="note">
-                นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
-            </div>
-        </section>
-    
-        <!-- Card 2: Task -->
-        <section class="card module-1">
-            <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
-            <p>ให้ค้นหาเนื้อหาเกี่ยวกับ <b>“เทคโนโลยีคอมพิวเตอร์สมัยใหม่”</b> โดยต้องมี:</p>
-
-            <ul>
-                <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
-                <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
-                <li>ใช้แท็ก formatting อย่างน้อย <b>5 ประเภท</b></li>
-                <li>ข้อความไหนมีการจัด formatting ให้ <b>ใส่สีข้อความเป็นสีแดงชมพู</b></li>
+                <li>&lt;b&gt; - <b class="text-color">ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt; - <strong class="text-color">ตัวหนาแบบ "สำคัญ" เชิงความหมาย (semantic
+                        importance)</strong></li>
+                <li>&lt;i&gt; - <i class="text-color">ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</i></li>
+                <li>&lt;em&gt; - <em class="text-color">ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt; - <u class="text-color">ขีดเส้นใต้</u></li>
+                <li>&lt;ins&gt; - <ins class="text-color">ขีดเส้นใต้</ins></li>
+                <li>&lt;mark&gt; - <mark class="text-color">ไฮไลต์ข้อความ</mark></li>
+                <li>&lt;code&gt; - <code class="text-color">แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                <li>&lt;small&gt; - <small class="text-color">ข้อความขนาดเล็ก</small></li>
+                <li>&lt;del&gt; - <del class="text-color">ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt; - <s class="text-color">ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt; - ตัวห้อย เช่น H<sub class="text-color">2</sub>O</li>
+                <li>&lt;sup&gt; - ตัวยก เช่น x<sup class="text-color">2</sup></li>
             </ul>
-        </section>
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt; – <s class="text-color">not support in HTML5</s></li>
+                    <li>&lt;big&gt; – <span class="text-color" style="font-size: 1.5em;">not support in HTML5</span>
+                    </li>
+                    <li>&lt;tt&gt; – <code class="text-color">not support in HTML5</code></li>
+                </ul>
+            </div <div class="note">
+            นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
+    </div>
+    </section>
 
-        <!-- Card 3: Example from students -->
-        <section class="card module-2">
-            <h2>บล็อกนี้สำหรับนักศึกษาหาเนื้อหามาใส่เอง</h2>
-            <p>เอาเนื้อหามาใส่ในนี้</p>
+    <!-- Card 2: Task -->
+    <section class="card module-1">
+        <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+        <p>ให้ค้นหาเนื้อหาเกี่ยวกับ <b>“เทคโนโลยีคอมพิวเตอร์สมัยใหม่”</b> โดยต้องมี:</p>
 
-        </section>
+        <ul>
+            <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+            <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+            <li>ใช้แท็ก formatting อย่างน้อย <b>5 ประเภท</b></li>
+            <li>ข้อความไหนมีการจัด formatting ให้ <b>ใส่สีข้อความเป็นสีแดงชมพู</b></li>
+        </ul>
+    </section>
 
-        <footer><a href="index.html">← Back to HTML Tutorial</a></footer>
+    <!-- Card 3: Example from students -->
+    <section class="card module-2">
+        <h1>เทคโนโลยีคอมพิวเตอร์สมัยใหม่ที่น่าสนใจในยุคปัจจุบัน</h1>
+        <p>สวัสดีครับ วันนี้ผมจะมาพูดถึงเรื่องเทคโนโลยีคอมพิวเตอร์ที่พวกเราใช้กันอยู่ทุกวันนี้ครับ
+            ต้องบอกเลยว่ามันไปไกลมากจริงๆ อย่างแรกที่เห็นได้ชัดเลยคือเรื่องของ <span style="color: #FF66B2;">AI หรือ
+                ปัญญาประดิษฐ์</span> ครับ เดี๋ยวนี้ไม่ว่าจะหันไปทางไหนก็มีแต่คนพูดถึง ChatGPT หรือ Gemini
+            ซึ่งมันช่วยให้ชีวิตการเรียนของพวกเราง่ายขึ้นมาก ไม่ว่าจะเป็นการช่วยสรุปเนื้อหาหรือช่วยหาไอเดียใหม่ๆ
+            ในการทำโปรเจกต์ส่งอาจารย์ครับ</p>
+
+        <p>นอกจากเรื่อง AI แล้ว อีกอย่างที่เด็กสายคอมอย่างเราต้องรู้คือเรื่องของ <span style="color: #FF66B2;"><em>Cloud
+            Computing</em></span> ครับ สมัยนี้เราแทบไม่ต้องพกแฟลชไดรฟ์กันแล้ว เพราะเราเก็บข้อมูลไว้บน Google
+            Drive หรือ iCloud กันหมด ข้อดีคือมัน <span
+            style="color: #FF66B2;"><u>เข้าถึงข้อมูลได้ทุกที่ทุกเวลา</u></span> ขอแค่มีอินเทอร์เน็ตก็พอ
+            แถมยังทำงานร่วมกับเพื่อนในกลุ่มได้แบบ Real-time ด้วย
+            ซึ่งถือว่าเป็นเทคโนโลยีที่เปลี่ยนวิธีการทำงานของคนยุคนี้ไปเลยครับ</p>
+
+        <p>สุดท้ายที่ผมอยากจะพูดถึงคือเรื่องฮาร์ดแวร์ครับ เดี๋ยวนี้คอมพิวเตอร์แรงๆ ไม่จำเป็นต้องเครื่องใหญ่เสมอไป
+            เรามีเทคโนโลยี <span style="color: #FF66B2;"><mark>Apple Silicon</mark></span> หรือชิปตระกูล M
+            ที่ทั้งแรงและประหยัดแบตเตอรี่มากๆ หรือถ้าเป็นฝั่งเกมเมอร์ก็ต้องนึกถึง:
+        <ul>
+            <li><span style="color: #FF66B2;">การ์ดจอซีรีส์ RTX</span> ที่รองรับการจำลองแสงเงาแบบสมจริง</li>
+            <li><span style="color: #FF66B2;">จอภาพแบบ 144Hz</span> ที่ทำให้ภาพดูลื่นไหลเวลาเล่นเกม</li>
+        </ul> สรุปได้ว่าเทคโนโลยีคอมพิวเตอร์ในตอนนี้พัฒนาไปไวมากจริงๆ ครับ
+        เราในฐานะนิสิตนักศึกษาก็ต้องคอยอัปเดตความรู้กันอยู่เสมอเพื่อไม่ให้ตกยุคครับ</p>
+
+
+    </section>
+
+    <footer><a href="index.html">← Back to HTML Tutorial</a></footer>
 
     </div>
 
 </body>
+
 </html>
