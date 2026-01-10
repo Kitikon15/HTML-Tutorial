@@ -55,7 +55,7 @@
         padding: 25px 30px;
         margin-bottom: 25px;
         border-radius: 12px;
-        border-top: 4px solid #ff0066;
+        border-top: 4px solid #00ccff;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
     .card2 {
@@ -148,11 +148,11 @@
     .download:hover {
         background-color: #d63c7a;
     }
-code {
-    background-color: #ececec;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
+    code {
+        background-color: #ececec;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
     footer {
         background-color: #1a1a1a;
         padding: 40px 0;
@@ -169,6 +169,26 @@ code {
         .image-link img:hover {
             transform: scale(1.03);
             box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        button {
+            padding: 5px 15px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
         }
         
 </style>
@@ -241,14 +261,41 @@ code {
     - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
     - ผูกกับ window โดยตรง
             </pre>
-            <button onclick="document.location='index.html'">
-    HTML Tutorial
-</button>
+            
+        <div class="grid">
+            <div class="card">
+                <p>ปุ่ม <code>document.location</code></p>
+                <button onclick="document.location='index.html'">HTML Tutorial</button>
+            </div>
 
-<button onclick="location.href='https://www.example.com'">
-    Visit Website
-</button>
+            <div class="card">
+                <p>ปุ่ม <code>location.href</code></p>
+                <button onclick="location.href='https://www.example.com'">Visit Website</button>
+            </div>
+
+            <div class="card">
+                <p>ตัวอย่างปุ่มจาก <code>cssnippets.shefali.dev</code></p>
+                <button class="subscribe-btn">SUBSCRIBE</button>
+            </div>
         </div>
+        <div class="grid-1">
+            <div class="card">
+                <p>เพิ่มขอบทอง</p>
+                <button class="subscribe-btn"style >SUBSCRIBE</button>
+            </div>
+
+            <div class="card">
+                <p>เพิ่มอนิเมชันเมื่อชี้ปุ่ม</p>
+                <button class="subscribe-btn">SUBSCRIBE</button>
+            </div>
+
+            <div class="card">
+                <p>ปุ่มสีดำ ขอบทอง แสงวิ่ง</p>
+                <button class="subscribe-btn">SUBSCRIBE</button>
+            </div>
+        </div>
+        </div>
+        
 <!------------------------------card 6------------------------------------->
         <div class="card box-3">
             <h2>6. Image Link</h2>
