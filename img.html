@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Images Workshop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!---------------------------------header---------------------------------------->
+    <div class="header">
+        <h1>Workshop: HTML Images</h1>
+    <p class="sub-header">ฝึกใช้แท็ก <code>&lt;img&gt;</code> หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+   <ul class="btn-text-link">
+            <li><a href="#card1" style="color: white;">1</a></li>
+            <li><a href="#card2" style="color: white;">2</a></li>
+            <li><a href="#card3" style="color: white;">3</a></li>
+            <li><a href="#card4" style="color: white;">4</a></li>
+            <li><a href="#card5" style="color: white;">5</a></li>
+            <li><a href="#card6" style="color: white;">6</a></li>
+            <li><a href="#card7" style="color: white;">7</a></li>
+            <li><a href="#card8" style="color: white;">8</a></li>
+        </ul>
+    </div>
+    <!---------------------------------card 1---------------------------------------->  
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>1) Image Basic <span class="badge">src/alt</span></h2>
+            <p>รูปภาพใน HTML ใช้แท็ก <code>img</code> โดยต้องมี <code>src</code> และควรมี <code>alt</code> เสมอ</p>
+            <pre>
+&lt;img src="images/photo.jpg" alt="ภาพตัวอย่าง"&gt;
+        </pre>
+
+            <div class="position left">
+                <img class="img-fixed"
+                src="https://t1.blockdit.com/photos/2019/09/5d7fc207efbbcf28c92ed07b_800x0xcover_xsoX9QgX.jpg"
+                alt="รูปภาพ">
+            </div>
+            <div class="position center">
+                <img class="img-fixed"
+                src="https://t1.blockdit.com/photos/2019/09/5d7fc207efbbcf28c92ed07b_800x0xcover_xsoX9QgX.jpg"
+                alt="รูปภาพ">
+            </div>
+            <div class="position right">
+                <img class="img-fixed"
+                src="https://t1.blockdit.com/photos/2019/09/5d7fc207efbbcf28c92ed07b_800x0xcover_xsoX9QgX.jpg"
+                alt="รูปภาพ">
+            </div>
+            <p class="note"><b>alt</b> สำคัญมาก: ช่วย SEO + ใช้แทนภาพเมื่อโหลดไม่ได้ + ช่วยผู้ใช้ Screen Reader</p>
+        </div>
+        <!---------------------------------card 2---------------------------------------->
+        <div class="card module-1" id="card2">
+            <h2>2) Resize & Aspect Ratio object-fit</h2>
+            <p>ถ้ากำหนดทั้งความกว้างและสูง ให้ใช้ <code>object-fit</code> เพื่อไม่ให้ภาพบิด</p>
+            <pre>
+/* ครอปภาพให้พอดีกรอบ */
+.img-fixed {
+width: 260px;
+height: 160px;
+object-fit: cover;
+}
+            </pre>
+            <img class="img-fixed"
+                src="https://t1.blockdit.com/photos/2019/09/5d7fc207efbbcf28c92ed07b_800x0xcover_xsoX9QgX.jpg"
+                alt="รูปภาพ">
+            <p class="note"><code>cover</code> = ครอปให้เต็มกรอบ, <code>contain</code> = เห็นภาพครบ (อาจมีขอบว่าง)</p>
+        </div>
+        <!---------------------------------card 3---------------------------------------->
+        <div class="card module-2" id="card3">
+            <h2> 3) Object fit <span class="badge">contain fill cover</span></h2>
+            <p>ตัวอย่างการใช้ <code>object-fit</code>แบบต่างๆ</p>
+            <pre>
+.obj-fit-image{
+width: 800px;
+height: 200px;
+border: 1px solid black;
+}
+.obj-fit-image.contain { object-fit: contain; }
+.obj-fit-image.fill { object-fit: fill; }
+.obj-fit-image.cover { object-fit: cover; }
+            </pre>
+
+            <h3>ภาพต้นฉบับ</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oIQVOMcK9rw82bItgD357xJfx_s54ZMDeQ&s"
+                alt="">
+            <h3>ใส่ <code>object-fit: contain</code> ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)</h3>
+
+            <div class="contain">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oIQVOMcK9rw82bItgD357xJfx_s54ZMDeQ&s"
+                    alt="">
+            </div>
+
+            <h3>object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)</h3>
+
+            <div class="fill">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oIQVOMcK9rw82bItgD357xJfx_s54ZMDeQ&s"
+                    alt="">
+            </div>
+
+            <h3>object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก</h3>
+
+            <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oIQVOMcK9rw82bItgD357xJfx_s54ZMDeQ&s"
+                    alt="">
+            </div>
+        </div>
+        <!---------------------------------card 4---------------------------------------->
+        <div class="card module-3" id="card4">
+            <div class="card1">
+                <h2> 4 Image Link <span class="badge">a+img</span></h2>
+                <p>คลิกที่รูปเพื่อเปิดลิงก์ เหมาะกับ banner / thumbnail</p>
+                <pre>
+&lt;a href="https://www.youtube.com" target="_blank"&gt;
+&lt;img src="images/banner.jpg" alt="Banner"&gt;
+&lt;/a&gt;
+        </pre>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/4195dyf+rFL.png" alt="Banner" class="YT-img">
+                </a>
+                <p class="note">ใช้<code>target="_blank"</code> เมื่ออยากเปิดในแท็บใหม่
+                </p>
+            </div>
+        </div>
+        <!---------------------------------card 5---------------------------------------->
+        <div class="card module-4" id="card5">
+            <h3> 5) Image Gallery <span class="badge">grid</span></h3>
+            <p>แสดงรูปหลายรูปด้วย Grid ให้จัดเรียงสวยและเป็นระเบียบ</p>
+            <pre>
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.gallery img { height: 120px; object-fit: cover; }
+    </pre>
+            <div class="gallery">
+                <img src="https://img.pikbest.com/png-images/qiantu/q-version-cute-cartoon-cute-little-animal-zodiac-pig_2721353.png!sw800" alt="Image 1">
+
+                <img src="https://png.pngtree.com/png-clipart/20240308/original/pngtree-cute-fire-cartoon-character-png-image_14545874.png" alt="Image 2">
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyD-461keXKrLe2hEQh2rp7owl1Iq8tbpuBg&s" alt="Image 3">
+
+                <img src="https://marketplace.canva.com/R6mZc/MAG9o8R6mZc/1/tl/canva-cartoon-duck-sleeping-illustration-MAG9o8R6mZc.png" alt="Image 4">
+
+                <img src="https://marketplace.canva.com/k5zKE/MAGrKHk5zKE/1/tl/canva-cute-cartoon-honeybee-illustration-MAGrKHk5zKE.jpg" alt="Image 5">
+
+                <img src="https://katoon1827hibari.wordpress.com/wp-content/uploads/2014/06/chibi-fanart-e0b8a3e0b8b9e0b89be0b881e0b8b2e0b8a3e0b98ce0b895e0b8b9e0b899e0b899e0b988e0b8b2e0b8a3e0b8b1e0b881-1.jpeg?w=480" alt="Image 6">
+
+            </div>
+
+            <p class="note">
+                ถ้ารูปขนาดไม่เท่ากัน ใช้ <code>object-fit: cover;</code> จะช่วยให้ดูสม่ำเสมอ
+            </p>
+        </div>
+        <!---------------------------------card 6---------------------------------------->
+        <div class="card module-5" id="card6">
+            <h2>6) Responsive Images <span>max-width:100%</span></h2>
+            <p>ทำให้ภาพไม่ล้นการ์ดและย่อขยายตามหน้าจอ</p>
+            <pre>
+img{
+max-width:100;
+height : auto;
+}
+        </pre>
+            <img src="https://images.dmc.tv/wallpaper/raw/0f2eb9c101b324815d366a.jpg" alt="รูปทะเล">
+         <p class="note">
+                ใช้target="_blank" เมื่ออยากเปิดในแท็บใหม่
+
+            </p>
+        </div>
+        <!---------------------------------card 7---------------------------------------->
+        <div class="card module-6" id="card7">
+            <h3>7) Figure + Caption <span class="badge">semantic</span></h3>
+
+            <p>
+                ใช้แท็ก <code>&lt;figure&gt;</code> และ <code>&lt;figcaption&gt;</code>
+                เพื่ออธิบายภาพ (เหมาะกับบทความ/รายงาน)
+            </p>
+            <pre>
+<code>
+&lt;figure&gt;
+  &lt;img src="image.jpg" alt="คำอธิบายรูปภาพ"&gt;
+  &lt;figcaption&gt;รูปที่ 1: คำอธิบายภาพ&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code>
+  </pre>
+
+            <figure style="margin-top: 20px; text-align: center;">
+                <img src="https://img.freepik.com/free-photo/milford-sound-new-zealand-travel-destination-concept_53876-42945.jpg"
+                    alt="ทิวทัศน์ธรรมชาติ" style="width: 100%; max-width: 600px; border-radius: 8px;">
+                <figcaption style="margin-top: 8px; color: #666;">
+                    รูปที่ 1: ตัวอย่างการใช้แท็ก figure และ figcaption
+                </figcaption>
+            </figure>
+
+            <p class="note">
+                “My Favorite Place / Product / Technology”
+                โดยมีภาพอย่างน้อย 5 ภาพ และต้องมี caption ทุกภาพ
+                (Gallery / Image Link พร้อม Caption)
+            </p>
+
+        </div>
+        <!---------------------------------card 8---------------------------------------->
+        <div class="card local-image" id="card8">
+            <h2>
+                8. ใช้รูปจากเครื่อง (Local Images)<span class="badge">VS Code</span>
+            </h2>
+            <p>
+                จัดโฟลเดอร์รูปให้เป็นระเบียบ เช่น <code>images/</code> แล้วอ้างอิงแบบ
+                relative path
+            </p>
+            <pre>
+          my_project/ 
+              ├─ index.html 
+              └─ images/ 
+                  ├─ photo1.jpg 
+                  └─ banner.png 
+ 
+          &lt;img src="images/photo1.jpg" alt="My Photo"&gt;
+         </pre>
+            <p class="note">
+                แนะนำให้ตั้งชื่อไฟล์รูปเป็นภาษาอังกฤษ ไม่มีช่องว่าง เช่น
+                <code>my-photo-1.jpg </code>
+            </p>
+        </div>
+
+
+
+        <!-- For Group 10: Back to Tutorial -->
+        <footer><a href="index.html">← Back to HTML Tutorial</a></footer>
+    </div>
+</body>
+
+</html>
