@@ -261,17 +261,18 @@ h1 {
     border-top: 4px solid #ffe100;
     /* เพิ่มเส้นขอบด้านบนสีฟ้าให้เข้ากับธีม */
 }
-footer {
-  background-color: #f0f0f0;
-  text-align: center;
+footer { 
+  background-color: #f0f0f0; /* สีพื้นหลังอ่อน */
+  text-align: center; /* จัดกึ่งกลางข้อความ */
 }
 
 .text-color {
-  color: #00cb4e;
+  color: #00cb4e; /* สีตัวอักษร */
 }
 
 .box {
-  border: 2px solid #000;
-  padding: 12px 20px;
-  x-width: fit-content;
+  border: 2px solid #000; /* เส้นขอบสีดำ */
+  border-radius: 8px; /* มุมโค้งมน */
+  padding: 12px 20px; /* ระยะห่างภายในกล่อง */
+  x-width: fit-content; /* ปรับขนาดตามเนื้อหา */
 }
