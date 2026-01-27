@@ -274,5 +274,4 @@ footer {
   border: 2px solid #000; /* เส้นขอบสีดำ */
   border-radius: 8px; /* มุมโค้งมน */
   padding: 12px 20px; /* ระยะห่างภายในกล่อง */
-  x-width: fit-content; /* ปรับขนาดตามเนื้อหา */
 }
