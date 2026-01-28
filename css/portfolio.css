@@ -131,15 +131,10 @@ h1 {
 
 .grade-container {
   width: 100%;
-  /* ให้กว้างเต็มที่ */
   margin-top: 30px;
-  /* ระยะห่างด้านบน */
   display: grid;
-  /* ใช้ Grid Layout */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* สร้างคอลัมน์ที่ยืดหยุ่น */
   gap: 15px;
-  /* ระยะห่างระหว่างคอลัมน์ */
 }
 
 .grade-container h2 {
