@@ -1,267 +1,265 @@
 body {
-    background-color: #f4f7f6;
-    /* สีพื้นหลังอ่อน */
-    color: #333;
-    /* สีตัวอักษร */
-    line-height: 1.6;
-    /* ระยะห่างบรรทัด */
-    padding: 20px;
-    /* ระยะห่างรอบขอบ */
+  background-color: #f4f7f6;
+  /* สีพื้นหลังอ่อน */
+  color: #333;
+  /* สีตัวอักษร */
+  line-height: 1.6;
+  /* ระยะห่างบรรทัด */
+  padding: 20px;
+  /* ระยะห่างรอบขอบ */
 }
 
-
 .header {
-    max-width: 900px;
-    /* กำหนดความกว้างสูงสุด */
-    margin: 0 auto;
-    /* จัดกึ่งกลางหน้าจอ */
-    background: #fff;
-    /* สีพื้นหลังขาว */
-    padding: 40px;
-    /* ระยะห่างภายในกล่อง */
-    border-radius: 15px;
-    /* ความโค้งมนของกล่อง */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    /* เงา */
+  max-width: 900px;
+  /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto;
+  /* จัดกึ่งกลางหน้าจอ */
+  background: #fff;
+  /* สีพื้นหลังขาว */
+  padding: 40px;
+  /* ระยะห่างภายในกล่อง */
+  border-radius: 15px;
+  /* ความโค้งมนของกล่อง */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  /* เงา */
 }
 
 h1 {
-    text-align: center;
-    /* จัดกึ่งกลาง */
-    color: #2c3e50;
-    /* สีตัวอักษร */
-    margin-bottom: 30px;
-    /* ระยะห่างด้านล่าง */
-    border-bottom: 3px solid #3498db;
-    /* เส้นขอบล่าง */
-    display: inline-block;
-    /* แสดงเป็นบล็อกแบบอินไลน์ */
-    width: 100%;
-    /* ให้กว้างเต็มที่ */
-    padding-bottom: 10px;
-    /* ระยะห่างด้านล่าง */
+  text-align: center;
+  /* จัดกึ่งกลาง */
+  color: #2c3e50;
+  /* สีตัวอักษร */
+  margin-bottom: 30px;
+  /* ระยะห่างด้านล่าง */
+  border-bottom: 3px solid #3498db;
+  /* เส้นขอบล่าง */
+  display: inline-block;
+  /* แสดงเป็นบล็อกแบบอินไลน์ */
+  width: 100%;
+  /* ให้กว้างเต็มที่ */
+  padding-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .student-portfolio {
-    display: flex;
-    /* ใช้ Flexbox */
-    flex-wrap: wrap;
-    /* ให้บรรทัดใหม่เมื่อพื้นที่ไม่พอ */
-    gap: 30px;
-    /* ระยะห่างระหว่างไอเท็ม */
-    margin-bottom: 40px;
-    /* ระยะห่างด้านล่าง */
+  display: flex;
+  /* ใช้ Flexbox */
+  flex-wrap: wrap;
+  /* ให้บรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+  gap: 30px;
+  /* ระยะห่างระหว่างไอเท็ม */
+  margin-bottom: 40px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .student-portfolio h2 {
-    width: 100%;
-    /* ให้กว้างเต็มที่ */
-    color: #3498db;
-    /* สีตัวอักษร */
-    border-left: 5px solid #3498db;
-    /* เส้นขอบด้านซ้าย */
-    padding-left: 15px;
-    /* ระยะห่างด้านซ้าย */
-    margin-bottom: 10px;
-    /* ระยะห่างด้านล่าง */
+  width: 100%;
+  /* ให้กว้างเต็มที่ */
+  color: #3498db;
+  /* สีตัวอักษร */
+  border-left: 5px solid #3498db;
+  /* เส้นขอบด้านซ้าย */
+  padding-left: 15px;
+  /* ระยะห่างด้านซ้าย */
+  margin-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .portfolio-img {
-    flex: 1;
-    /* ให้ใช้พื้นที่เท่ากับส่วนอื่นๆ */
-    min-width: 300px;
-    /* ความกว้างขั้นต่ำ */
-    text-align: center;
-    /* จัดกึ่งกลาง */
+  flex: 1;
+  /* ให้ใช้พื้นที่เท่ากับส่วนอื่นๆ */
+  min-width: 300px;
+  /* ความกว้างขั้นต่ำ */
+  text-align: center;
+  /* จัดกึ่งกลาง */
 }
 
 .portfolio-img img {
-    border-radius: 15px;
-    /* ความโค้งมนของภาพ */
-    object-fit: cover;
-    /* ปรับขนาดภาพให้เต็มกรอบ */
-    width: 100%;
-    /* ให้กว้างเต็มที่ */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    /* เงา */
-    transition: transform 0.3s ease;
-    /* การเปลี่ยนแปลงแบบนุ่มนวล */
+  border-radius: 15px;
+  /* ความโค้งมนของภาพ */
+  object-fit: cover;
+  /* ปรับขนาดภาพให้เต็มกรอบ */
+  width: 100%;
+  /* ให้กว้างเต็มที่ */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* เงา */
+  transition: transform 0.3s ease;
+  /* การเปลี่ยนแปลงแบบนุ่มนวล */
 }
 
 .portfolio-img img:hover {
-    transform: scale(1.02);
-    /* ขยายภาพเมื่อโฮเวอร์ */
+  transform: scale(1.02);
+  /* ขยายภาพเมื่อโฮเวอร์ */
 }
 
 .portfolio-name {
-    flex: 1;
-    /* ให้ใช้พื้นที่เท่ากับส่วนอื่นๆ */
-    min-width: 300px;
-    /* ความกว้างขั้นต่ำ */
-    display: flex;
-    /* ใช้ Flexbox */
-    flex-direction: column;
-    /* จัดเรียงในแนวตั้ง */
-    justify-content: center;
-    /* จัดกึ่งกลางแนวตั้ง */
+  flex: 1;
+  /* ให้ใช้พื้นที่เท่ากับส่วนอื่นๆ */
+  min-width: 300px;
+  /* ความกว้างขั้นต่ำ */
+  display: flex;
+  /* ใช้ Flexbox */
+  flex-direction: column;
+  /* จัดเรียงในแนวตั้ง */
+  justify-content: center;
+  /* จัดกึ่งกลางแนวตั้ง */
 }
 
 .portfolio-name p {
-    font-size: 1rem;
-    /* ขนาดตัวอักษร */
-    margin-bottom: 5px;
-    /* ระยะห่างด้านล่าง */
-    padding: 8px;
-    /* ระยะห่างภายใน */
-    color: #000000;
-    /* สีตัวอักษร */
-    background: #dadada;
-    /* สีพื้นหลัง */
-    border-radius: 5px;
-    /* มุมโค้งมน */
+  font-size: 1rem;
+  /* ขนาดตัวอักษร */
+  margin-bottom: 5px;
+  /* ระยะห่างด้านล่าง */
+  padding: 9px;
+  /* ระยะห่างภายใน */
+  color: #000000;
+  /* สีตัวอักษร */
+  background: #dadada;
+  /* สีพื้นหลัง */
+  border-radius: 5px;
+  /* มุมโค้งมน */
 }
 
 .portfolio-name p:hover {
-    background: #c0c0c0;
-    /* สีพื้นหลังเมื่อโฮเวอร์ */
-    color: #ffffff;
-    /* สีตัวอักษรเมื่อโฮเวอร์ */
-    cursor: pointer;
-    /* เปลี่ยนเคอร์เซอร์เมื่อโฮเวอร์ */
+  background: #c0c0c0;
+  /* สีพื้นหลังเมื่อโฮเวอร์ */
+  color: #ffffff;
+  /* สีตัวอักษรเมื่อโฮเวอร์ */
+  cursor: pointer;
+  /* เปลี่ยนเคอร์เซอร์เมื่อโฮเวอร์ */
 }
 
 .grade-container {
-    width: 100%;
-    /* ให้กว้างเต็มที่ */
-    margin-top: 30px;
-    /* ระยะห่างด้านบน */
-    display: grid;
-    /* ใช้ Grid Layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* สร้างคอลัมน์ที่ยืดหยุ่น */
-    gap: 15px;
-    /* ระยะห่างระหว่างคอลัมน์ */
+  width: 100%;
+  /* ให้กว้างเต็มที่ */
+  margin-top: 30px;
+  /* ระยะห่างด้านบน */
+  display: grid;
+  /* ใช้ Grid Layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* สร้างคอลัมน์ที่ยืดหยุ่น */
+  gap: 15px;
+  /* ระยะห่างระหว่างคอลัมน์ */
 }
 
 .grade-container h2 {
-    grid-column: 1 / -1;
-    /* ให้หัวข้อครอบคลุมทั้งแถว */
-    text-align: left;
-    /* จัดกึ่งกลาง */
-    margin-top: 40px;
-    /* ระยะห่างด้านบน */
-    color: #3498db;
-    /* สีตัวอักษร */
+  grid-column: 1 / -1;
+  /* ให้หัวข้อครอบคลุมทั้งแถว */
+  text-align: left;
+  /* จัดกึ่งกลาง */
+  margin-top: 40px;
+  /* ระยะห่างด้านบน */
+  color: #3498db;
+  /* สีตัวอักษร */
 }
 
 .grades,
 .grades-gpa {
-    background: #fff;
-    /* สีพื้นหลังขาว */
-    border: 1px solid #e0e6ed;
-    /* เส้นขอบสีอ่อน */
-    border-radius: 15px;
-    /* ความโค้งมนของกล่อง */
-    padding: 20px;
-    /* ระยะห่างภายในกล่อง */
-    text-align: center;
-    /* จัดกึ่งกลางข้อความ */
-    transition: all 0.3s;
-    /* การเปลี่ยนแปลงแบบนุ่มนวล */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    /* เงาเบาๆ */
+  background: #fff;
+  /* สีพื้นหลังขาว */
+  border: 1px solid #e0e6ed;
+  /* เส้นขอบสีอ่อน */
+  border-radius: 15px;
+  /* ความโค้งมนของกล่อง */
+  padding: 20px;
+  /* ระยะห่างภายในกล่อง */
+  text-align: center;
+  /* จัดกึ่งกลางข้อความ */
+  transition: all 0.3s;
+  /* การเปลี่ยนแปลงแบบนุ่มนวล */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  /* เงาเบาๆ */
 }
 
-
 .grades:hover {
-    border-color: #c8db34;
-    /* เปลี่ยนสีเส้นขอบเมื่อโฮเวอร์ */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
-    /* เพิ่มเงาเมื่อโฮเวอร์ */
+  border-color: #c8db34;
+  /* เปลี่ยนสีเส้นขอบเมื่อโฮเวอร์ */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  /* เพิ่มเงาเมื่อโฮเวอร์ */
 }
 
 .grades-gpa {
-    background: #ebf5fb;
-    /* สีพื้นหลังอ่อน */
-    border: 2px solid #000000;
-    /* เส้นขอบสีเข้ม */
+  background: #ebf5fb;
+  /* สีพื้นหลังอ่อน */
+  border: 2px solid #000000;
+  /* เส้นขอบสีเข้ม */
 }
 
 .grades h3,
 .grades-gpa h3 {
-    font-size: 0.9rem;
-    /* ขนาดตัวอักษร */
-    color: #7f8c8d;
-    /* สีตัวอักษร */
-    margin-bottom: 10px;
-    /* ระยะห่างด้านล่าง */
+  font-size: 0.9rem;
+  /* ขนาดตัวอักษร */
+  color: #7f8c8d;
+  /* สีตัวอักษร */
+  margin-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .gpa,
 .gpa-total {
-    font-size: 1.8rem;
-    /* ขนาดตัวอักษร */
-    font-weight: bold;
-    /* ตัวหนา */
-    color: #2c3e50;
-    /* สีตัวอักษร */
+  font-size: 1.8rem;
+  /* ขนาดตัวอักษร */
+  font-weight: bold;
+  /* ตัวหนา */
+  color: #2c3e50;
+  /* สีตัวอักษร */
 }
 
 /* ข้อมูลการติดต่อ */
 .contact {
-    display: grid;
-    /* ใช้ Grid Layout */
-    grid-template-columns: 1fr 1fr;
-    /* สร้างสองคอลัมน์ที่มีขนาดเท่ากัน */
-    gap: 20px;
-    /* ระยะห่างระหว่างคอลัมน์ */
-    margin-top: 40px;
-    /* ระยะห่างด้านบน */
-    border-top: 1px solid #eee;
-    /* เส้นขอบด้านบน */
-    padding-top: 30px;
-    /* ระยะห่างด้านบน */
+  display: grid;
+  /* ใช้ Grid Layout */
+  grid-template-columns: 1fr 1fr;
+  /* สร้างสองคอลัมน์ที่มีขนาดเท่ากัน */
+  gap: 20px;
+  /* ระยะห่างระหว่างคอลัมน์ */
+  margin-top: 40px;
+  /* ระยะห่างด้านบน */
+  border-top: 1px solid #eee;
+  /* เส้นขอบด้านบน */
+  padding-top: 30px;
+  /* ระยะห่างด้านบน */
 }
 
 .contact h2 {
-    font-size: 1.2rem;
-    /* ขนาดตัวอักษร */
-    color: #2c3e50;
-    /* สีตัวอักษร */
-    margin-bottom: 15px;
-    /* ระยะห่างด้านล่าง */
+  font-size: 1.2rem;
+  /* ขนาดตัวอักษร */
+  color: #2c3e50;
+  /* สีตัวอักษร */
+  margin-bottom: 15px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .contact p {
-    margin-bottom: 8px;
-    /* ระยะห่างด้านล่าง */
-    color: #555;
-    /* สีตัวอักษร */
-    font-size: 0.95rem;
-    /* ขนาดตัวอักษร */
+  margin-bottom: 8px;
+  /* ระยะห่างด้านล่าง */
+  color: #555;
+  /* สีตัวอักษร */
+  font-size: 0.95rem;
+  /* ขนาดตัวอักษร */
 }
 
 .Footer {
-    max-width: 900px;
-    /* ให้กว้างเท่ากับกล่องเนื้อหาหลัก */
-    margin: 30px auto 10px;
-    /* จัดกึ่งกลางหน้าจอ */
-    background: #000000;
-    /* เปลี่ยนเป็นสีเข้มดูเป็นทางการ */
-    color: #ffffff;
-    /* ตัวอักษรสีขาว */
-    padding: 20px;
-    /* เพิ่มพื้นที่ภายในกล่อง */
-    border-radius: 12px;
-    /* ความโค้งมนของกล่อง */
-    text-align: center;
-    /* จัดกึ่งกลางข้อความ */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    /* เพิ่มเงาให้ดูมีมิติ */
-    border-top: 4px solid #ffe100;
-    /* เพิ่มเส้นขอบด้านบนสีฟ้าให้เข้ากับธีม */
+  max-width: 900px;
+  /* ให้กว้างเท่ากับกล่องเนื้อหาหลัก */
+  margin: 30px auto 10px;
+  /* จัดกึ่งกลางหน้าจอ */
+  background: #000000;
+  /* เปลี่ยนเป็นสีเข้มดูเป็นทางการ */
+  color: #ffffff;
+  /* ตัวอักษรสีขาว */
+  padding: 20px;
+  /* เพิ่มพื้นที่ภายในกล่อง */
+  border-radius: 12px;
+  /* ความโค้งมนของกล่อง */
+  text-align: center;
+  /* จัดกึ่งกลางข้อความ */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* เพิ่มเงาให้ดูมีมิติ */
+  border-top: 4px solid #ffe100;
+  /* เพิ่มเส้นขอบด้านบนสีฟ้าให้เข้ากับธีม */
 }
-footer { 
+footer {
   background-color: #f0f0f0; /* สีพื้นหลังอ่อน */
   text-align: center; /* จัดกึ่งกลางข้อความ */
 }
