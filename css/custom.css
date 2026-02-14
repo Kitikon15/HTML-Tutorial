@@ -188,7 +188,7 @@ a:hover {
 }
 
 /* ---------- Page Section---------- */
-.content-layout{
+.content-layout {
   display: grid;
   grid-template-columns: 2fr 0.8fr;
   gap: 20px;
@@ -197,24 +197,24 @@ a:hover {
 
 
 /* post----------Main-Left----------- */
-.card{
+.card {
   background-color: white;
   border-radius: 4px;
   padding: 15px;
-  box-shadow:  0 2px 8px rgba(0, 0, 0, 0.367);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.367);
 }
 
-.card + .card{
+.card+.card {
   margin-top: 7.5px;
 }
 
-.post-header{
+.post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.date-circle{
+.date-circle {
   width: 55px;
   height: 55px;
   background-color: #1e8bc3;
@@ -230,25 +230,25 @@ a:hover {
   flex-direction: column;
 }
 
-.date-day{
+.date-day {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1;
 }
 
-.post-title{
+.post-title {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.card-header-line{
+.card-header-line {
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #777;
 }
 
-.post-footer{
+.post-footer {
   font-size: 0.65rem;
   color: #555;
 
@@ -256,20 +256,20 @@ a:hover {
   padding-top: 8px;
 }
 
-.post-image{
+.post-image {
   height: 300px;
   overflow: hidden;
 
   margin: 15px 0;
 }
 
-.post-image img{
+.post-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.post-detail{
+.post-detail {
   font-size: 0.8rem;
   line-height: 1.6;
   color: #555;
@@ -282,66 +282,66 @@ Table Styles
 ========================================================= */
 
 .table-description {
-font-size: 0.84rem;
-color: #666;
-line-height: 1.5;
-margin-bottom: 15px;
+  font-size: 0.84rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .comparison-table {
-width: 100%;
-border-radius: 8px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-margin: 20px 0;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 
-/* border: 2px solid #fc2525; */
-/* border-collapse: collapse; */
-overflow: hidden;
+  /* border: 2px solid #fc2525; */
+  /* border-collapse: collapse; */
+  overflow: hidden;
 }
 
 .comparison-table th {
-background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
-color: white;
-font-size: 1rem;
-font-weight: 600;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
 
-text-align: left;
-padding: 15px;
+  text-align: left;
+  padding: 15px;
 }
 
 .comparison-table td {
-border-bottom: 1px solid #e0e0e0;
-background-color: #ffffff;
-padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 12px 15px;
 }
 
 .comparison-table tr:nth-child(even) td {
-background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .comparison-table tr:hover td {
-background-color: #e3f2fd;
-transition: background-color 0.3s ease;
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
 }
 
 .comparison-table .feature {
-font-weight: 600;
-color: #333;
-background-color: #f0f4f8;
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f4f8;
 }
 
 .comparison-table .pro {
-color: #28a745;
-font-weight: 500;
+  color: #28a745;
+  font-weight: 500;
 }
 
 .comparison-table .con {
-color: #dc3545;
-font-weight: 500;
+  color: #dc3545;
+  font-weight: 500;
 }
 
 .comparison-table .neutral {
-color: #6c757d;
+  color: #6c757d;
 }
 
 
@@ -349,54 +349,55 @@ color: #6c757d;
 /* SIDEBAR -----Right------------------------------------------ */
 /* ========================================================= */
 .sidebar {
-display: flex;
-flex-direction: column;
-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .sidebar .widget {
-background: #fff;
-border-radius: 3px;
-box-shadow: 0 0 0 1px #dee3ea;
-padding: 15px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.367);
+  padding: 25px;
+
 }
 
 .widget-title {
-font-size: 1rem;
-font-weight: 600;
-margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .widget p {
-font-size: 0.875rem;
-color: #555;
-line-height: 1.5;
-margin-bottom: 8px;
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .author-photo {
-width: 100%;
-height: 140px;
-background: #d9e3f0;
-margin: 8px 0;
+  width: 100%;
+  height: 140px;
+  background: #d9e3f0;
+  margin: 8px 0;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-font-size: 13px;
-color: #555;
+  font-size: 13px;
+  color: #555;
 }
 
 .btn-facebook {
-background: #3b5998;
-color: #fff;
-font-size: 12px;
-border-radius: 3px;
-margin-top: 5px;
+  background: #3b5998;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-top: 5px;
 
-display: inline-block;
-padding: 6px 10px;
+  display: inline-block;
+  padding: 6px 10px;
 }
 
 
@@ -408,142 +409,273 @@ padding: 6px 10px;
 
 /* ---------- Title ---------- */
 .contact-title {
-font-size: 28px;
-font-weight: 600;
-text-align: center;
-color: #333;
-margin-bottom: 15px;
-text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* ---------- Container ของฟอร์ม ---------- */
 .contact-form-main {
-/* max-width: 600px; */
-width: 95%;
-border: 1px solid #e0e0e0;
-border-radius: 15px;
-background: #fff;
-padding: 40px;
-margin: 0 auto;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* max-width: 600px; */
+  width: 95%;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
 }
 
 /* ---------- Layout ของแถว/กลุ่ม ---------- */
 .form-row {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
-margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .form-row.full-width {
-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .form-group {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* ---------- Label ---------- */
 .form-label {
-display: block;
-font-size: 14px;
-font-weight: 600;
-margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 /* ---------- Controls (input/select/textarea) ---------- */
 .form-input,
 .form-select,
 .form-textarea {
-width: 100%;
-padding: 12px 15px;
-border-radius: 8px;
-font-size: 14px;
-transition: all 0.2s ease;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
 
-/* transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
+  /* transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
 transform 0.2s ease; */
 }
 
 .form-textarea {
-min-height: 100px;
-resize: vertical;
+  min-height: 100px;
+  resize: vertical;
 }
 
 .form-select {
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* ฟอร์มหลัก (พื้นขาว) */
 .contact-form-main .form-input,
 .contact-form-main .form-select,
 .contact-form-main .form-textarea {
-background: #f8f9fa;
-border: 2px solid #e9ecef;
-color: #333;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #333;
 }
 
 /* Focus: ฟอร์มหลัก */
 .contact-form-main .form-input:focus,
 .contact-form-main .form-select:focus,
 .contact-form-main .form-textarea:focus {
-outline: none;
-background: #fff;
-border-color: #667eea;
-box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
-transform: translateY(-1px);
+  outline: none;
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  transform: translateY(-1px);
 }
 
 /* ---------- Checkbox group ---------- */
 .form-checkbox-group {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .checkbox-item {
-display: flex;
-align-items: center;
-font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
 
 /* สีข้อความ checkbox แยกตามฟอร์ม */
 .contact-form-main .checkbox-item {
-color: #333;
+  color: #333;
 }
 
 .checkbox-item input[type="checkbox"] {
-margin-right: 8px;
-transform: scale(1.15);
-accent-color: #ff6b6b;
+  margin-right: 8px;
+  transform: scale(1.15);
+  accent-color: #ff6b6b;
 }
 
 /* ---------- Button (ใช้ class เดียว) ---------- */
 .form-button {
-width: 100%;
-border: none;
-padding: 12px 30px;
-border-radius: 25px;
-font-size: 16px;
-font-weight: 600;
-cursor: pointer;
-color: #fff;
-transition: all 0.2s ease;
+  width: 100%;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
 
-/* transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; */
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; */
 }
 
 /* ปุ่มของฟอร์มหลัก */
 .contact-form-main .form-button {
-background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #667eea, #764ba2);
 }
 
 .contact-form-main .form-button:hover {
-background: linear-gradient(45deg, #5a67d8, #6b46c1);
-transform: translateY(-2px);
-box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+  background: linear-gradient(45deg, #5a67d8, #6b46c1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
 }
 
+.widget-frame {
+  padding: 15px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title-2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f0fdf4;
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+}
+
+.input-group input::placeholder {
+  color: #94a3b8;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(to right, #fca5a5, #cbd5e1);
+  background: linear-gradient(90deg, #f87171 0%, #d1d5db 100%);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+  transform: scale(1.02);
+}
+
+.icon-email {
+  background: white;
+  color: #10b981;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.widget-frame-1 {
+  background: linear-gradient(180deg, #6366f1 0%, #8b5cf6 100%);
+  width: 320px;
+  padding: 35px 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.author-photo-tab {
+  width: 100%;
+  height: 80px;
+  background: #ececef;
+  margin: 15px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  color: #555;
+}
+
+.author-photo-tabbar {
+  width: 100%;
+  height: 300px;
+  background: #ececef;
+  margin: 15px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  color: #555;
+}
+
+footer {
+  background-color: black;
+  Margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button{
+  background-color: #00f7ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
