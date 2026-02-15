@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปงานหลังการสอบปฏิบัติการเขียนเว็บด้วย HTML + CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            box-sizing: border-box;
+            background-color: #FBE6C2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .site {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 0 12px 12px;
+            padding: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu {
+            max-width: 900px;
+            font-weight: 400;
+            font-size: 0.5rem;
+            margin: 10px auto 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-menu li {
+            display: inline;
+            background-color: #AC0D0D;
+            border-radius: 10px;
+        }
+
+        .nav-menu li:hover {
+            background-color: #FFFE9A;
+            color: #AC0D0D;
+            transform: translateY(-8px) scale(1.1); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .nav-menu li:active {
+            transform: translateY(-2px) scale(0.95);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition-duration: 0.1s;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        .nav-menu a:hover {
+            color: #000000;
+        }
+
+        .info-section {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .details-card {
+            background-color: #AC0D0D;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            font-family: 'Kanit', sans-serif;
+            max-width: 600px;
+            margin-left:30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-name {
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .label {
+            min-width: 160px; 
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .value {
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        .github {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+    
+        .photo-circle {
+            width: 250px;           
+            height: 250px;         
+            border-radius: 50%;     
+            overflow: hidden;       
+            border: 4px solid #AC0D0D;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+        }
+
+        .photo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;     
+            object-position: center;
+        }
+        .photo-circle:hover {
+            transform: scale(1.05); 
+            transition: transform 0.3s ease;
+            border: 4px solid #FFFE9A;
+            box-shadow: 0 4px 15px #AC0D0D ;
+        }
+        
+        .grid-grade {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .grade-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .grade-tab {
+            color: #F77E21;
+        }
+
+        .grade-card:hover {
+            transform: scale(1.02);
+            color: #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 15px #FFFE9A;
+        }
+ 
+        .grade-gpa {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            font-size: 24px;
+        }
+
+        .grade-gpa:hover {
+            color: #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 15px #FFFE9A;
+        }
+
+        .main-footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 50px;
+            width: 100%;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .button{
+            background-color: #AC0D0D;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- site ข้อมูลส่วนหัวบนสุด -->
+    <header class="site">
+        <h1 class="header-title">📒 รายงานผลเกรด</h1>
+    </header>
+    <!-- nav card ข้อมูลนักศึกษา -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#student-info">👨‍🎓 ข้อมูลนักศึกษา</a></li>
+            <li><a href="#grades">📚 ผลการเรียน</a></li>
+            <li><a href="#contact">📞 ติดต่อ</a></li>
+        </ul>
+    </nav>
+    <!-- section card ส่วนข้อมูลนักศึกษา  -->
+    <section>
+        <div class="info-section">
+                <div class="details-card">
+                <h2 class="info-name">🎓 MR. Kitikon Thettham</h2>
+                
+                <div class="info-row">
+                    <span class="label">🪪 รหัสนักศึกษา:</span>
+                    <span class="value">674259003</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">👨🏼‍🎓 ชื่อ-นามสกุล:</span>
+                    <span class="value">นายกิติกร เทศธรรม</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">📖 หมู่เรียน:</span>
+                    <span class="value">67/50</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">👨🏻‍🏫 อาจารย์ที่ปรึกษา:</span>
+                    <span class="value">อาจารย์ ดร.อุษณีย์ ภักดีตระกูลวงศ์</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">💻 Github:</span>
+                    <span class="github">github.com/Kitikon15</span>
+                </div>
+        </div>
+        <!-- photo image -->
+                <div class="photo-img">
+                <div class="photo-circle">
+                    <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t39.30808-6/621570503_1937636087104439_5143313693227072461_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xAtlhsFuWs4Q7kNvwEjrHxY&_nc_oc=Adm1n9M7V5U33z8lwKR_lKQ4KFR50OGGtIGhlV5I_NZ4fFQjdkvfXosLBxig8VdaKGxybBoigkp3ZWJhUAL9hVz4&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=QbcOP5htQqAUm57XYZ2SzA&oh=00_Aft131ZYOAtZ9epX11RW9NY8ps1zUwB70Ky-xakP5n_99A&oe=6996F972" alt="Student-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-grade">
+            <div class="grade-card"> 🏆 ปี 1 เทอม 1 : <span class="grade-tab">4.00</span></div>
+            <div class="grade-card"> 🏆 ปี 1 เทอม 2 : <span class="grade-tab">3.74</span></div>
+            <div class="grade-card"> 🏆 ปี 2 เทอม 1 : <span class="grade-tab">3.79</span></div>
+        </div>
+
+        <nav class="grade-gpa">
+            🏆 เกรดเฉลี่ยสะสม : 4.00
+        </nav>
+        
+        <button class="button"><a href="index.html" style="color: #ffffff;">Back to HTML Tutorial</a></button>
+
+    </section>
+
+    <footer class="main-footer">
+        <p>© 2026 My Grade Report BY Kitikon Thettham. ID 674259003.</p>
+        <p>🏛️ Nakhon Pathom Rajabhat University</p>
+    </footer>
+</body>
+
+</html>
