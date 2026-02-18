@@ -15,8 +15,8 @@ body {
 }
 
 .wrapper {
-  width: 1000px;
-  max-width: 100%;
+  width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
   /* background-color: blanchedalmond; */
 }
@@ -97,7 +97,6 @@ a:hover {
   font-weight: 400;
   display: block;
   padding: 12px 16px;
-
 }
 
 .nav-menu li a:hover,
@@ -177,7 +176,7 @@ a:hover {
 }
 
 .hero-item .read-more::after {
-  content: '→';
+  content: "→";
   margin-left: 5px;
 
   transition: margin-left 0.3s ease;
@@ -194,7 +193,6 @@ a:hover {
   gap: 20px;
   /* background-color: yellowgreen; */
 }
-
 
 /* post----------Main-Left----------- */
 .card {
@@ -275,7 +273,6 @@ a:hover {
   color: #555;
 }
 
-
 /* ------ for section 2 ------ */
 /* =========================================================
 Table Styles
@@ -344,7 +341,6 @@ Table Styles
   color: #6c757d;
 }
 
-
 /* ========================================================= */
 /* SIDEBAR -----Right------------------------------------------ */
 /* ========================================================= */
@@ -359,7 +355,6 @@ Table Styles
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.367);
   padding: 25px;
-
 }
 
 .widget-title {
@@ -400,9 +395,6 @@ Table Styles
   padding: 6px 10px;
 }
 
-
-
-
 /* ========================================================= */
 /* --- Form for Left side --- */
 /* ========================================================= */
@@ -427,7 +419,6 @@ Table Styles
   padding: 40px;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
 }
 
 /* ---------- Layout ของแถว/กลุ่ม ---------- */
@@ -463,9 +454,6 @@ Table Styles
   border-radius: 8px;
   font-size: 14px;
   transition: all 0.2s ease;
-
-  /* transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
-transform 0.2s ease; */
 }
 
 .form-textarea {
@@ -477,7 +465,6 @@ transform 0.2s ease; */
   cursor: pointer;
 }
 
-/* ฟอร์มหลัก (พื้นขาว) */
 .contact-form-main .form-input,
 .contact-form-main .form-select,
 .contact-form-main .form-textarea {
@@ -486,7 +473,6 @@ transform 0.2s ease; */
   color: #333;
 }
 
-/* Focus: ฟอร์มหลัก */
 .contact-form-main .form-input:focus,
 .contact-form-main .form-select:focus,
 .contact-form-main .form-textarea:focus {
@@ -584,7 +570,7 @@ transform 0.2s ease; */
   border-radius: 12px;
   border: none;
   background-color: #f0fdf4;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   box-sizing: border-box;
   font-size: 15px;
   color: #333;
@@ -676,16 +662,95 @@ transform 0.2s ease; */
   color: #726a6a;
 }
 
+:root {
+  --line: #ffff00;
+  --bg01: #f33a3a;
+  --bg02: #f48e28;
+  --bg03: #f6bcbc;
+  --up: green;
+  --down: red;
+}
 
+.wrap-table {
+  border: 5px solid var(--line);
+
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.price-table {
+  width: 100%;
+  color: #333;
+  background-color: var(--bg03);
+
+
+  border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid var(--line);
+  padding: 10px 5px;
+}
+
+.price-table thead th {
+  background-color: var(--bg01);
+}
+
+.month {
+  background-color: var(--bg01);
+}
+
+.num {
+  text-align: right;
+}
+
+.delta {
+  text-align: center;
+}
+
+.delta.up {
+  color: var(--up);
+}
+
+.delta.down {
+  color: var(--down);
+}
+
+.price-table tr.total th,
+.price-table tr.total td {
+  background-color: var(--bg02);
+  font-weight: 600;
+}
+
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.icon.up {
+  border-bottom: 10px solid var(--up);
+  margin-right: 5px;
+}
+
+.icon.down {
+  border-top: 10px solid var(--down);
+  margin-right: 5px;
+}
+
+/* -----------------------footer----------------------------- */
 footer {
   background-color: black;
-  Margin-top: 50px;
+  margin-top: 50px;
   padding: 10px;
   text-align: center;
   color: #ffffff;
 }
 
-.button{
+.button {
   background-color: #00f7ff;
   color: #ffffff;
   padding: 10px 20px;
@@ -693,4 +758,115 @@ footer {
   margin: 20px auto;
   display: block;
   transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+@media (max-width: 922px) {
+  .site-header {
+    background-color: #b3b910;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    background-color: #10b981;
+  }
+
+  .hero-grid,
+  .content-layout,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .nav-menu li a {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ซ่อน */
+#burger-menu {
+    display: none;
+}
+
+  @media (max-width: 576px) {
+    .site-header {
+        background-color: #e40de4;
+    }
+    /* กำหนดขนาด/พื่นที่ */
+
+/* กำหนดขนาด/พื้นที่ของปุ่ม */
+    #burger-menu {
+        display: block;
+        height: 25px;
+        width: 30px;
+        position: relative;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    /* วาด “เส้น 3 ขีด” ด้วย span + pseudo elements */
+    #burger-menu span,
+    #burger-menu span::before,
+    #burger-menu span::after {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        display: block;
+        transition: all 0.3s ease;
+        content: "";
+    }
+
+    /* จัดตำแหน่ง 3 เส้น (บน/กลาง/ล่าง) */
+
+    #burger-menu span { top: 11px; }
+    #burger-menu span::before { top: -8px; }
+    #burger-menu span::after {top : 8px; }
+
+    /* Animation เมื่อกด */
+
+    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+    #burger-menu.close span {
+        background: transparent;
+    }
+
+    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+    #burger-menu.close span:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+    #burger-menu.close span:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #0022ff;
+    }
+
+    #menu.overlay {
+        display: flex;
+    }
+
 }
