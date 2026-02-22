@@ -63,13 +63,7 @@
             transform: translateY(-8px) scale(1.1); 
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
-
-        .nav-menu li:active {
-            transform: translateY(-2px) scale(0.95);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition-duration: 0.1s;
-        }
-
+        
         .nav-menu a {
             color: white;
             text-decoration: none;
@@ -81,6 +75,7 @@
         .nav-menu a:hover {
             color: #000000;
         }
+
 
         .info-section {
             max-width: 900px;
@@ -257,9 +252,9 @@
         </ul>
     </nav>
     <!-- section card ส่วนข้อมูลนักศึกษา  -->
-    <section>
+    <section id="student-info">
         <div class="info-section">
-                <div class="details-card">
+            <div class="details-card">
                 <h2 class="info-name">🎓 MR. Kitikon Thettham</h2>
                 
                 <div class="info-row">
@@ -282,15 +277,17 @@
                     <span class="label">💻 Github:</span>
                     <span class="github">github.com/Kitikon15</span>
                 </div>
-        </div>
+            </div>
         <!-- photo image -->
-                <div class="photo-img">
+            <div class="photo-img">
                 <div class="photo-circle">
                     <img src="https://scontent.fkdt3-1.fna.fbcdn.net/v/t39.30808-6/621570503_1937636087104439_5143313693227072461_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xAtlhsFuWs4Q7kNvwEjrHxY&_nc_oc=Adm1n9M7V5U33z8lwKR_lKQ4KFR50OGGtIGhlV5I_NZ4fFQjdkvfXosLBxig8VdaKGxybBoigkp3ZWJhUAL9hVz4&_nc_zt=23&_nc_ht=scontent.fkdt3-1.fna&_nc_gid=QbcOP5htQqAUm57XYZ2SzA&oh=00_Aft131ZYOAtZ9epX11RW9NY8ps1zUwB70Ky-xakP5n_99A&oe=6996F972" alt="Student-img">
                 </div>
             </div>
         </div>
+    </section>
 
+    <section id="grades">
         <div class="grid-grade">
             <div class="grade-card"> 🏆 ปี 1 เทอม 1 : <span class="grade-tab">4.00</span></div>
             <div class="grade-card"> 🏆 ปี 1 เทอม 2 : <span class="grade-tab">3.74</span></div>
@@ -302,7 +299,6 @@
         </nav>
         
         <button class="button"><a href="index.html" style="color: #ffffff;">Back to HTML Tutorial</a></button>
-
     </section>
 
     <footer class="main-footer">
