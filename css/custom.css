@@ -195,6 +195,14 @@ a:hover {
 }
 
 /* post----------Main-Left----------- */
+
+.post-list{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .card {
   background-color: white;
   border-radius: 4px;
@@ -344,6 +352,11 @@ Table Styles
 /* ========================================================= */
 /* SIDEBAR -----Right------------------------------------------ */
 /* ========================================================= */
+
+
+
+
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -766,7 +779,19 @@ footer {
   color: #ffffff;
 }
 
+/* order ลำดับใหม่ */
+/* ค่าบวก ตัวบวกน้อยสุด จะอยู่บนสุด */
+    .order-widget01 {order: 2}
+    .order-widget02 {order: 3}
+    .order-widget03 {order: 4}
+    .order-widget04 {order: 5}
+    .order-widget05 {order: 1}
 
+
+
+
+
+/* ------------------------------------------ */
 @media (max-width: 922px) {
   .site-header {
     background-color: #b3b910;
@@ -868,5 +893,20 @@ footer {
     #menu.overlay {
         display: flex;
     }
+
+    /* สลับตำแหน่ง card เนื้อหา */
+
+    /* ค่า- ตัว มากสุด จะอยู่บนสุด */
+
+    .order-image {order: -3}
+    .order-table {order: -2}
+    .order-form {order: -1}
+
+    /* ค่าบวก ตัวบวกน้อยสุด จะอยู่บนสุด */
+    .order-widget01 {order: 5}
+    .order-widget02 {order: 2}
+    .order-widget03 {order: 1}
+    .order-widget04 {order: 4}
+    .order-widget05 {order: 3}
 
 }
