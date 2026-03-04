@@ -16,6 +16,7 @@
     --shade-btn-color7: rgb(0, 255, 98);
     --shade-btn-color8: rgb(0, 255, 191);
     --background-color-gray: rgb(241, 241, 241, 0.723);
+    --pink-color: rgba(255, 0, 123);
 }
 
 * {
@@ -370,7 +371,9 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.form-group {flex: 1;}
+.form-group {
+    flex: 1;
+}
 
 .form-group label {
     font-size: 0.95rem;
@@ -378,8 +381,10 @@ footer {
     margin-bottom: 0.5rem;
     display: block;
 }
+
 .form-input,
-.form-select {
+.form-select,
+.form-textarea {
     width: 100%;
     padding: 0.5rem 1rem;
     border: 2px solid #ccc;
@@ -389,8 +394,107 @@ footer {
 }
 
 .form-input:focus,
-.form-select:focus {
+.form-select:focus,
+.form-textarea {
     border-color: var(--primary-color);
     box-shadow: 0 0 3px var(--background-color-gray);
     outline: none;
 }
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.radio-item,
+.checkbox-item {
+    border: 2px solid var(--background-color-gray);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+
+    font-size: 0.9rem;
+    align-items: center;
+
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-item input,
+.checkbox-item input {
+    accent-color: var(--pink-color);
+}
+
+.radio-item input:checked+span,
+.checkbox-item input:checked+span {
+    color: var(--primary-color);
+}
+
+.radio-item:hover,
+.checkbox-item:hover {
+    border-color: var(--shade-btn-color3);
+    box-shadow: var(--shade-btn-color1);
+}
+
+.form-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 32px 0;
+    border-top: 2px solid var(--shade-btn-color1);
+}
+
+.btn-submit ,
+.btn-reset {
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.btn-submit{
+    background-color: var(--primary-color);
+    color: var(--base-white-color);
+}
+
+.btn-reset{
+    background-color: var(--shade-btn-color3);
+    color: var(--base-white-color);
+}
+.btn-submit:hover{
+    background-color: var(--shade-btn-color5);
+    color: var(--primary-color);
+}
+
+.btn-reset:hover{
+    background-color: var(--shade-btn-color7);
+    color: var(--primary-color);
+}
+
+.form-textarea{
+    resize:vertical;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* .button {
+    background-color: #00f7ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff700;
+    text-decoration: none;
+    color: #ffffff;
+} */
