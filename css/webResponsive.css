@@ -448,7 +448,7 @@ footer {
     border-top: 2px solid var(--shade-btn-color1);
 }
 
-.btn-submit ,
+.btn-submit,
 .btn-reset {
     padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
@@ -458,43 +458,248 @@ footer {
     font-weight: 600;
 }
 
-.btn-submit{
+.btn-submit {
     background-color: var(--primary-color);
     color: var(--base-white-color);
 }
 
-.btn-reset{
+.btn-reset {
     background-color: var(--shade-btn-color3);
     color: var(--base-white-color);
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
     background-color: var(--shade-btn-color5);
     color: var(--primary-color);
 }
 
-.btn-reset:hover{
+.btn-reset:hover {
     background-color: var(--shade-btn-color7);
     color: var(--primary-color);
 }
 
-.form-textarea{
-    resize:vertical;
+.form-textarea {
+    resize: vertical;
     min-height: 100px;
     margin-bottom: 10px;
 }
 
-/* .button {
-    background-color: #00f7ff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    display: block;
-    transition: background-color 0.3s ease;
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+button {
+  background-color: #00f7ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #fff700;
-    text-decoration: none;
-    color: #ffffff;
-} */
+  background-color: #fff700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+/* ----responsive styles---- */
+
+@media (max-width: 768px) {
+
+    .header-button {
+        display: none;
+    }
+
+    .hero,
+    .customize,
+    .support {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .solution-content,
+    .discover-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .order-text {
+        order: 2;
+    }
+
+    .order-photo {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .footer-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        display: none;
+    }
+
+    .form-row,
+    .radio-group,
+    .checkbox-group,
+    .form-btn {
+        flex-direction: column;
+    }
+
+    .radio-item,
+    .checkbox-item {
+        border: none;
+        padding: 1px 18px;
+    }
+
+        /* แสดง hamburger */
+
+    /* กำหนดขนาด/พื้นที่ของปุ่ม */
+    #burger-menu {
+        display: block;
+        cursor: pointer;
+        height: 25px;
+        width: 30px;
+        position: relative;
+        z-index: 1000;
+        /* ให้อยู่เหนือเมนูเต็มจอ */
+    }
+
+
+    /* วาด “เส้น 3 ขีด” ด้วย span + pseudo elements */
+    #burger-menu span,
+    #burger-menu span:before,
+    #burger-menu span:after {
+        background: #fff;
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        transition: 0.3s ease;
+        content: "";
+    }
+
+
+    /* จัดตำแหน่ง 3 เส้น (บน/กลาง/ล่าง) */
+
+    /* วางเส้น “กลาง” ไว้กลาง ๆ ปุ่ม */
+    #burger-menu span {
+        top: 11px;
+    }
+
+    /* ให้มัน “ขยับขึ้น” ไปเป็นเส้นบน */
+    #burger-menu span:before {
+        top: -8px;
+    }
+
+    /* ขยับลงไปเป็นเส้นล่าง */
+    #burger-menu span:after {
+        top: 8px;
+    }
+
+
+
+    /* (----เพิ่ม----) ให้กล่อง header เป็นจุดอ้างอิงเมนู */
+    .header-container {
+        position: relative;
+    }
+
+
+/* แก้ตรงนี้ใหม่ -----  ซ่อนเมนู */
+
+    #menu {
+        /* เปลี่ยนจาก display:none เป็นกล่องลอยแบบ absolute */
+        display: none;
+        flex-direction: column;
+        background: var(--shade-btn-color1);
+        /* ยังซ่อนเหมือนเดิม */
+
+        position: absolute;
+        /* สำคัญ: ลอยเมนู */
+
+        top: calc(100% + 10px);
+        /* ใต้แถบ header */
+
+        right: 0;
+        /* ชิดขวา ใกล้ burger */
+
+        width: 290px;
+        /* ✅ กว้างขึ้น */
+        padding: 10px;
+        border-radius: 14px;
+        box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+        z-index: 999;
+
+
+        /* max-width: 92vw; */
+        /* กันล้นจอบนมือถือ */
+    }
+
+  /*==== (end เพิ่ม) ==== */
+
+
+    /* เปิดเมนูเมื่อ active  แสดงเมนูขึ้นมา*/
+    #menu.overlay {
+        display: flex;
+    }
+
+    /* Animation เมื่อกด */
+
+    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+    #burger-menu.close span {
+        background: transparent;
+    }
+
+    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+    #burger-menu.close span:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+    #burger-menu.close span:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+/* ----------------------------------- */
+
+    /* Navbar */
+
+    .nav-menu {
+        flex-direction: column;
+        display: block;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+
+    .nav-menu li a {
+        display: block;
+    }
+
+    .nav-menu li:hover {
+        background-color: var(--base-white-color);
+    }
+
+    .nav-menu li:hover a {
+        color: var(--primary-color);
+    }
+}
