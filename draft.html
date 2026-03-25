@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="เว็ปไซด์แนะนำสถานที่ท่องเที่ยวในจังหวัด พร้อมข้อมูลและภาพประกอบที่น่าสนใจ" />
+    <title>Responsive Web Test (Kitikon_003)</title>
+
+    <!-- ให้ นศ. เพิ่มลิงค์ Google Fonts เอง 1 font -->
+
+
+    <!-- ตรวจสอบส่วน head ให้ดีว่ามีอะไรขาดหายไปอีกบ้าง ถ้ามีก็ใส่ให้ครบ -->
+
+
+    <!-- เขียน style sheet เพิ่มเติมให้ใกล้เคียงกับตัวอย่าง -->
+    <style>
+        /* ========== Reset เบื้องต้น ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+        }
+
+        :root {
+            --primary: #2f00ff;
+            --secondary: #f4f4f4;
+            --accent: #e67e22;
+            --dark: #d1df18;
+
+            --shade-btn-color1: red;
+            --shade-btn-color2: rgb(255, 94, 0);
+            --shade-btn-color3: rgb(255, 196, 0);
+            --shade-btn-color4: rgb(251, 255, 0);
+            --shade-btn-color5: rgb(157, 255, 0);
+            --shade-btn-color6: rgb(51, 255, 0);
+            --shade-btn-color7: rgb(0, 255, 98);
+            --shade-btn-color8: rgb(0, 255, 191);
+            --background-color-gray: rgb(241, 241, 241, 0.723);
+            --pink-color: rgba(255, 0, 123);
+        }
+
+        /* header {
+            background: white;
+            display: flex;
+            max-width: 1400px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        } */
+
+        .header-container {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container-hero {
+            background: var(--background-color-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin-left: 20px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: var(--dark);
+            transition: 0.5s;
+        }
+
+        .nav-list a:hover {
+            color: var(--accent);
+            background-color: var(--shade-btn-color3);
+            border-radius: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ========== ใช้รวม ๆ ========== */
+
+
+        h2 {
+
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        /* ========== Header ========== */
+        .nav-list a {
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+
+        /* ========== Hero ========== */
+        .hero {
+            padding: 70px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+
+        .left-side {
+            width: 80%;
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: var(--primary);
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 20px 0;
+            }
+        }
+
+        .right-side {
+            width: 50%;
+
+
+            img {
+                border-radius: 15px;
+            }
+        }
+
+        .btn-primary {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(to right, var(--shade-btn-color1), var(--shade-btn-color2));
+            color: var(--base-white-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, var(--shade-btn-color1), var(--shade-btn-color2));
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-img {
+            width: 100%;
+            /* height: 300px; */
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 8px 20px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 768px) {
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container,
+            .nav-list{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .hero{
+                flex-direction: column;
+            }
+
+            .left-side,
+            .right-side {
+                width: 100%;
+            }
+
+            .order-text {
+                order: 2;
+            }
+
+            .order-photo {
+                order: 1;
+                margin-bottom: 20px;
+            }
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero{
+                flex-direction: column;
+            }
+
+            .left-side,
+            .right-side {
+                width: 100%;
+            }
+
+            .order-text {
+                order: 2;
+            }
+
+            .order-photo {
+                order: 1;
+                margin-bottom: 20px;
+            }
+
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="brand">เที่ยวเมืองน่าไป (จังหวัดเชียงใหม่)</h1>
+
+            <nav id="menu">
+                <ul class="nav-list">
+                    <li><a href="#in">หน้าแรก</a></li>
+                    <li><a href="#travel">สถานที่ท่องเที่ยว</a></li>
+                    <li><a href="#con">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="burger-menu">
+            <span></span>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <div class="container-hero">
+            <section class="hero" id="in">
+                <div class="left-side order-text">
+                    <p>จังหวัดท่องเที่ยวแนะนำ</p>
+                    <h2>ค้นพบเสน่ห์ของเมืองท่องเที่ยวที่คุณไม่ควรพลาด</h2>
+                    <p>สัมผัสธรรมชาติ วัฒนธรรม และอาหารท้องถิ่นที่น่าสนใจ
+                        พร้อมสถานที่ยอดนิยมที่เหมาะสำหรับการพักผ่อนในวันหยุด</p>
+                    <a href="#" class="btn">ดูรายละเอียด</a>
+                </div>
+                <div class="right-side order-photo">
+                    <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6ri8EY1PtBj4duWBmBXF0bOoQl9FJjbK5jDCw9s7IxFvwdxAc6U.jpg"
+                        alt="ภาพสถานที่ท่องเที่ยว" />
+                </div>
+            </section>
+        </div>
+
+        <!-- Places Section - สถานที่ท่องเที่ยวแนะนำ -->
+
+        <div class="container" id="travel">
+            <h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ</h2>
+            <p class="section-title1">ตัวอย่างสถานที่ท่องเที่ยวที่น่าสนใจในจังหวัด</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://f.tpkcdn.com/review-source/b1307263-c6b5-7ad4-8afc-60471d78f19c.png"
+                        alt="วัดพระธาตุดอยสุเทพ" />
+                    <div class="card-content">
+                        <h3>1. วัดพระธาตุดอยสุเทพ</h3>
+                        <p>แลนด์มาร์คสำคัญของเชียงใหม่ ตั้งอยู่บนยอดดอยสุเทพ เป็นวัดที่มีความสวยงามและเป็นสิริมงคล
+                            สามารถมองเห็นวิวเมืองเชียงใหม่ได้แบบพาโนรามา</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&q=80&w=500"
+                        alt="อุทยานหินเขางู" class="card-img">
+                    <div class="card-content">
+                        <h3>2. ประตูท่าแพ</h3>
+                        <p>จุดถ่ายรูปยอดฮิตใจกลางเมืองเก่าเชียงใหม่ กับกำแพงเมืองสีอิฐที่เป็นเอกลักษณ์
+                            เหมาะกับการมาเดินเล่น ถ่ายรูปกับนกพิราบ และเดินถนนคนเดินในวันอาทิตย์</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=500"
+                        alt="น้ำตกเก้าโจน" class="card-img">
+                    <div class="card-content">
+                        <h3>3. ยอดดอยอินทนนท์</h3>
+                        <p>จุดที่สูงที่สุดในประเทศไทย สัมผัสอากาศหนาวเย็นตลอดทั้งปี
+                            ชมความงามของเส้นทางศึกษาธรรมชาติกิ่วแม่ปาน และพระมหาธาตุนภเมทนีดล-นภพลภูมิสิริ</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="con">
+        <p>©2026 เที่ยวเมืองน่าไป Kitikon Thettham. All Rights Reserved.</p>
+        <span>Email: 674259003@webmail.npru.ac.th</span>
+        <span>Facebook: เที่ยวเมืองน่าไป (จังหวัดเชียงใหม่)</span>
+    </footer>
+
+
+</body>
+
+</html>
